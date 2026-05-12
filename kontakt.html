@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt & Angebot anfragen – Cleany Vollreinigung Berlin</title>
+  <meta name="description" content="Kontaktieren Sie Cleany Vollreinigung für ein individuelles Angebot. Wir beraten Sie gerne zu unseren Textilpflegeleistungen für Ihr Unternehmen in Berlin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar" role="banner">
+    <div class="container">
+      <a href="index.html" class="navbar-logo" aria-label="Cleany Vollreinigung Startseite">
+        <img src="logos/image3.png" alt="Cleany Vollreinigung Logo">
+      </a>
+      <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Hauptnavigation">
+        <ul class="navbar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="kontakt.html" class="active nav-cta">Angebot anfragen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Kontakt & Angebot anfragen</h1>
+        <p>Fordern Sie jetzt Ihr individuelles Angebot an – wir melden uns umgehend bei Ihnen</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <form id="contact-form" action="mailto:info@cleany-vollreinigung.de" method="POST" enctype="text/plain" novalidate>
+              <div class="form-group">
+                <label for="firmenname">Firmenname <span class="required">*</span></label>
+                <input type="text" id="firmenname" name="firmenname" required>
+                <div class="form-error" id="firmenname-error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="ansprechpartner">Ansprechpartner <span class="required">*</span></label>
+                <input type="text" id="ansprechpartner" name="ansprechpartner" required>
+                <div class="form-error" id="ansprechpartner-error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-Mail <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+                <div class="form-error" id="email-error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="telefon">Telefon</label>
+                <input type="tel" id="telefon" name="telefon">
+              </div>
+
+              <div class="form-group">
+                <label for="branche">Branche <span class="required">*</span></label>
+                <select id="branche" name="branche" required>
+                  <option value="">Bitte wählen</option>
+                  <option value="Medizin">Medizin</option>
+                  <option value="Eventlocation">Eventlocation</option>
+                  <option value="Gastronomie">Gastronomie</option>
+                  <option value="Apotheke">Apotheke</option>
+                  <option value="Kosmetik/Spa">Kosmetik/Spa</option>
+                  <option value="Zahnarzt">Zahnarzt</option>
+                  <option value="Sonstiges">Sonstiges</option>
+                </select>
+                <div class="form-error" id="branche-error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="haeufigkeit">Gewünschte Abhäufigkeit</label>
+                <select id="haeufigkeit" name="haeufigkeit">
+                  <option value="1x/Woche">1x/Woche</option>
+                  <option value="2x/Woche">2x/Woche</option>
+                  <option value="3x/Woche">3x/Woche</option>
+                  <option value="Flexibel">Flexibel</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="nachricht">Nachricht</label>
+                <textarea id="nachricht" name="nachricht" placeholder="Ihre Wünsche, Fragen oder Anmerkungen…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Angebot anfragen</button>
+            </form>
+
+            <div class="success-message" id="form-success">
+              <i class="ti ti-circle-check"></i>
+              <h3>Vielen Dank!</h3>
+              <p>Wir melden uns so schnell wie möglich.</p>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <h3>Kontaktinformationen</h3>
+
+            <div class="contact-info-item">
+              <i class="ti ti-map-pin"></i>
+              <div>
+                <p><strong>Adresse</strong></p>
+                <p>Wilmersdorfer Str. 22<br>10585 Berlin</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <i class="ti ti-mail"></i>
+              <div>
+                <p><strong>E-Mail</strong></p>
+                <p><a href="mailto:info@cleany-vollreinigung.de">info@cleany-vollreinigung.de</a></p>
+              </div>
+            </div>
+
+            <div class="map-embed">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.3962120663133!2d13.293986615771575!3d52.50670277981622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850f26c2d8e0d%3A0x7e3b9f7b8a0e8f3f!2sWilmersdorfer%20Str.%2022%2C%2010585%20Berlin!5e0!3m2!1sde!2sde!4v1" loading="lazy" title="Karte – Standort Cleany Vollreinigung"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logos/image3.png" alt="Cleany Vollreinigung">
+          <p>Professionelle Textilpflege für Unternehmen in Berlin. Schnell. Sauber. Zuverlässig.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="mailto:info@cleany-vollreinigung.de">info@cleany-vollreinigung.de</a></li>
+            <li><a href="kontakt.html">Angebot anfragen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Adresse</h4>
+          <ul>
+            <li>Wilmersdorfer Str. 22</li>
+            <li>10585 Berlin</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cleany Vollreinigung</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
