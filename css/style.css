@@ -66,13 +66,15 @@ img {
   z-index: 1000;
   background: var(--white);
   border-bottom: 1px solid var(--border);
+  min-height: 64px;
 }
 
 .navbar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  min-height: 72px;
+  overflow: visible;
 }
 
 .navbar-logo {
@@ -86,8 +88,11 @@ img {
 }
 
 .navbar-logo img {
-  height: 60px;
+  height: 56px;
   width: auto;
+  object-fit: contain;
+  display: block;
+  max-width: none;
 }
 
 .navbar-links {
@@ -189,17 +194,17 @@ img {
 }
 
 .hero-logo {
-  margin: 0 auto 40px;
-  max-width: 400px;
+  margin: 0;
 }
 
 .hero-logo img {
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
-}
-
-.hero-logo img {
-  width: 100%;
+  filter: brightness(0) invert(1);
+  width: min(320px, 70%);
   height: auto;
+  display: block;
+  margin: 0 auto 2rem;
+  transform: scale(2);
+  transform-origin: center center;
 }
 
 .hero h1 {
@@ -967,7 +972,7 @@ img {
   .navbar-links {
     display: none;
     position: absolute;
-    top: 72px;
+    top: 70px;
     left: 0;
     right: 0;
     background: var(--white);
